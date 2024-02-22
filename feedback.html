@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <style>
+        /* Add your custom styles here */
+    </style>
+    <title>User Feedback Form</title>
+</head>
+
+<body class="bg-gray-100">
+
+    <div class="container mx-auto p-4">
+        <h1 class="text-3xl font-bold mb-4">Feedback Form</h1>
+
+        <form>
+            <div class="mb-3">
+                <label for="userName" class="form-label">Name</label>
+                <input type="text" class="form-control" id="userName" placeholder="Enter your name">
+            </div>
+
+            <div class="mb-3">
+                <label for="userEmail" class="form-label">Email</label>
+                <input type="email" class="form-control" id="userEmail" placeholder="Enter your email">
+            </div>
+
+            <div class="mb-3">
+                <label for="userMobile" class="form-label">Mobile Number</label>
+                <input type="tel" class="form-control" id="userMobile" placeholder="Enter your mobile number">
+            </div>
+
+            <div class="mb-3">
+                <label for="userQuery" class="form-label">Query/Message</label>
+                <textarea class="form-control" id="userQuery" rows="3" placeholder="Enter your query or message"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" onclick="submitFeedback()" formaction="video.html">Submit Feedback</button>
+        </form>
+    </div>
+
+    <!-- Bootstrap and Tailwind CSS JavaScript dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.js"></script>
+
+    <script>
+        function submitFeedback() {
+            // Add your feedback submission logic here
+            alert("Feedback submitted successfully!");
+        }
+    </script>
+
+</body>
+
+</html>

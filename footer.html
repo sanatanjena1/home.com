@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website</title>
+    <!-- Bootstrap CSS (You can replace this with a CDN link if needed) -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- Tailwind CSS (You can replace this with a CDN link if needed) -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Add custom styles here */
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .address {
+            text-align: left;
+            color: #ccc;
+        }
+        .map-container {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            height: 200px; /* Set the desired height for the map */
+            margin-top: 20px;
+        }
+        .map {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Your content goes here -->
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <!-- Left Side: Address Details -->
+            <div class="col-lg-4 col-md-12 mb-md-0 mb-3 address">
+                <p>My Home Address</p>
+            </div>
+
+            <!-- Middle Side: Embedded Location Map -->
+            <div class="col-lg-4 col-md-12 mb-md-0 mb-3 map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7474.588618790776!2d86.679377!3d20.494158!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a1bbb8d9e045421%3A0xce96a820bdf4de08!2zSmVuYSBCdWlsZGluZyDwn4-i8J-Pq_Cfj6Lwn4-rIERvbGlnYW9u!5e0!3m2!1sen!2sin!4v1706421200071!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <!-- Right Side: Empty Column (Can be used for additional content) -->
+            <div class="col-lg-4 col-md-12 mb-md-0 mb-3"></div>
+        </div>
+
+        <!-- Copyright Information at the Bottom -->
+        <div class="row mt-4">
+            <div class="col-lg-12">
+                <p>&copy; 2024 SJ Developer. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS and Popper.js (You can replace this with CDN links if needed) -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</body>
+</html>
