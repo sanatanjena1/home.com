@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <title>Document</title>
+</head>
+<body class="bg-gray-200">
+
+    <div class="container mx-auto mt-5">
+        <h1 style="text-align: center; font-weight: 900; text-decoration: underline;">Video Section</h1>
+        <div class="flex flex-wrap">
+            <div class="w-full sm:w-1/2 md:w-1/4 p-2">
+                <video class="w-full h-auto border border-gray-300" autoplay id="video1" onclick="playVideo('video1', 'video1.mp4')">
+                    <source src="vd/video1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="w-full sm:w-1/2 md:w-1/4 p-2">
+                <video class="w-full h-auto border border-gray-300" muted id="video2" onclick="playVideo('video2', 'video2.mp4')">
+                    <source src="vd/video2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="w-full sm:w-1/2 md:w-1/4 p-2">
+                <video class="w-full h-auto border border-gray-300" muted id="video3" onclick="playVideo('video3', 'video3.mp4')">
+                    <source src="vd/video3.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="w-full sm:w-1/2 md:w-1/4 p-2">
+                <video class="w-full h-auto border border-gray-300" muted  id="video4" onclick="playVideo('video4', 'video4.mp4')">
+                    <source src="vd/video4.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="w-full sm:w-1/2 md:w-1/4 p-2">
+                <video class="w-full h-auto border border-gray-300" muted id="video5" onclick="playVideo('video5', 'video1.mp5')">
+                    <source src="vd/video5.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="w-full sm:w-1/2 md:w-1/4 p-2">
+                <video class="w-full h-auto border border-gray-300" muted id="video6" onclick="playVideo('video6', 'video6.mp4')">
+                    <source src="vd/video6.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="w-full sm:w-1/2 md:w-1/4 p-2">
+                <video class="w-full h-auto border border-gray-300" muted id="video7" onclick="playVideo('video7', 'video7.mp4')">
+                    <source src="vd/video7.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="w-full sm:w-1/2 md:w-1/4 p-2">
+                <video class="w-full h-auto border border-gray-300" muted  id="video8" onclick="playVideo('video8', 'video8.mp4')">
+                    <source src="vd/video8.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </div>
+    
+    <script>// script.js
+    
+        let currentlyPlaying = null;
+        
+        function playVideo(videoId, videoSource) {
+            const videoElement = document.getElementById(videoId);
+        
+            // Pause the currently playing video
+            if (currentlyPlaying && currentlyPlaying !== videoId) {
+                document.getElementById(currentlyPlaying).pause();
+            }
+        
+            // Play or pause the clicked video
+            if (videoElement.paused) {
+                videoElement.play();
+                currentlyPlaying = videoId;
+            } else {
+                videoElement.pause();
+                currentlyPlaying = null;
+            }
+        }
+        </script>
+    
+    
+</body>
+</html>
