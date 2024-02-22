@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <title>Processing Page</title>
+  <style>
+    body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.main-content {
+  display: block;
+}
+
+  </style>
+</head>
+<body>
+
+  <div class="loading-container">
+    <div class="spinner-border" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+    <p>Please wait while we process your request...</p>
+  </div>
+
+  <!-- Your main content goes here (hidden while loading) -->
+  <div class="main-content" style="display: none;">
+    <!-- Your 5 sections go here -->
+    <section>
+      <!-- Section 1 content -->
+    </section>
+    <section>
+      <!-- Section 2 content -->
+    </section>
+    <section>
+      <!-- Section 3 content -->
+    </section>
+    <section>
+      <!-- Section 4 content -->
+    </section>
+    <section>
+      <!-- Section 5 content -->
+    </section>
+  </div>
+
+  <script>
+    // Simulate a delay to mimic processing
+setTimeout(function() {
+  // Hide the loading container and show the main content
+  $('.loading-container').hide();
+  $('.main-content').show();
+}, 5000); // 5000 milliseconds (5 seconds) delay
+
+  </script>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

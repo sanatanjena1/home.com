@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+    }
+
+    /* Custom styles for the navigation bar */
+    #navbar {
+      background-color: #333;
+      padding: 10px;
+      color: white;
+    }
+
+    #navbar a {
+      color: white;
+      text-decoration: none;
+    }
+
+    #search-bar {
+      display: none;
+    }
+
+    /* Style for the cross symbol */
+    #toggle-btn i {
+      font-size: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+
+<nav id="navbar" class="navbar fixed-top">
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-center">
+      <div>
+        <a href="#" class="navbar-brand"><img src="/logo/home2.gif" style="border-radius: 50px;" height="50px" alt=""></a>
+      </div>
+      <div class="d-flex align-items-center">
+        <div id="search-bar">
+          <input type="text" placeholder="Search">
+          <!-- <button class="btn btn-light">Home</button> -->
+          <a href="index.html"><span>&#8594;</span>  Home Page</a><br>
+          <a href="video.html">👉 Home video Section</a>
+        </div>
+        <button id="toggle-btn" class="btn btn-outline-light">
+          <i class="fa fa-bars fa-lg"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+
+<hr><hr><br>
+
+<div class="container mt-5">
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+        <a href="#" class="card-link">
+          <div class="card bg-primary text-white">
+            <img src="/logo/3dhome.gif" class="card-img" alt="Image 1">
+            <div class="card-img-overlay d-flex flex-column justify-content-end">
+              <h5 class="card-title" style="font-size: 50px; color: ;">2024</h5>
+              <p class="card-text"> <mark>2024 Home Intermediate Images</mark></p>
+            </div>
+          </div>
+        </a>
+      </div>
+  
+      <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+        <a href="#" class="card-link">
+          <div class="card bg-success text-white">
+            <img src="/logo/tree.gif" class="card-img" alt="Image 2">
+            <div class="card-img-overlay d-flex flex-column justify-content-end">
+              <h5 class="card-title" style="font-size: 40px; color:rgb(7, 7, 7);">2023</h5>
+              <p class="card-text" style="color: rgb(250, 238, 7);">All 2023 Home Construction Photo's Check </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+
+
+<div class="container mt-5">
+  <div class="row">
+      <!-- Image 1 -->
+      <div class="col-md-4 mb-4 col-6 col-lg-3">
+          <div class="image-container" onclick="openImageModal('/h2023p/bl1.jpg')">
+              <img src="/h2023p/bl1.jpg" alt="Image 1" class="img-fluid">
+          </div>
+      </div>
+      <div class="col-md-4 mb-4 col-6 col-lg-3">
+          <div class="image-container" onclick="openImageModal('/h2023p/bl2.jpg')">
+              <img src="/h2023p/bl2.jpg" alt="Image 1" class="img-fluid">
+          </div>
+      </div>
+      <div class="col-md-4 mb-4 col-6 col-lg-3">
+          <div class="image-container" onclick="openImageModal('/h2023p/bl3.jpg')">
+              <img src="/h2023p/bl3.jpg" alt="Image 1" class="img-fluid">
+          </div>
+      </div>
+      <div class="col-md-4 mb-4 col-6 col-lg-3">
+          <div class="image-container" onclick="openImageModal('/h2023p/bl4.jpg')">
+              <img src="/h2023p/bl4.jpg" alt="Image 1" class="img-fluid">
+          </div>
+      </div>
+
+      <!-- Image 5 -->
+      <div class="col-md-4 mb-4 col-6 col-lg-3">
+          <div class="image-container" onclick="openImageModal('/h2023p/bl5.jpg')">
+              <img src="/h2023p/bl5.jpg" alt="Image 2" class="img-fluid">
+          </div>
+      </div>
+
+      <!-- Image 6 -->
+      <div class="col-md-4 mb-4 col-6 col-lg-3">
+          <div class="image-container" onclick="openImageModal('h2023p/bl6.jpg')">
+              <img src="/h2023p/bl6.jpg" alt="Image 3" class="img-fluid">
+          </div>
+      </div>
+
+      <!-- Image 7 -->
+      <div class="col-md-4 mb-4 col-6 col-lg-3">
+          <div class="image-container" onclick="openImageModal('/h2023p/bl7.jpg')">
+              <img src="/h2023p/bl7.jpg" alt="Image 3" class="img-fluid">
+          </div>
+      </div>
+
+      <!-- Image 8 -->
+      <div class="col-md-4 mb-4 col-6 col-lg-3">
+          <div class="image-container" onclick="openImageModal('/h2023p/n1.jpg')">
+              <img src="/h2023p/n1.jpg" alt="Image 3" class="img-fluid">
+          </div>
+      </div>
+
+      <!-- Image 9 -->
+      <div class="col-md-4 mb-4 col-6 col-lg-3">
+          <div class="image-container" onclick="openImageModal('/h2023p/n2.jpg')">
+              <img src="/h2023p/n2.jpg" alt="Image 3" class="img-fluid">
+          </div>
+      </div>
+
+      <!-- Image 10 -->
+      <div class="col-md-4 mb-4 col-6 col-lg-3">
+          <div class="image-container" onclick="openImageModal('h2023p/n3.jpg')">
+              <img src="/h2023p/n3.jpg" alt="Image 3" class="img-fluid">
+          </div>
+      </div>
+
+      <!-- Image 11 -->
+      <div class="col-md-4 mb-4 col-6 col-lg-3">
+          <div class="image-container" onclick="openImageModal('h2023p/n4.jpg')">
+              <img src="/h2023p/n4.jpg" alt="Image 3" class="img-fluid">
+          </div>
+      </div>
+
+      <!-- Image 12 -->
+      <div class="col-md-4 mb-4 col-6 col-lg-3">
+          <div class="image-container" onclick="openImageModal('h2023p/n5.jpg')">
+              <img src="/h2023p/n5.jpg" alt="Image 3" class="img-fluid">
+          </div>
+      </div>
+
+      <!-- Image 13 -->
+      <div class="col-md-4 mb-4 col-6 col-lg-3">
+          <div class="image-container" onclick="openImageModal('h2023p/n6.jpg')">
+              <img src="/h2023p/n6.jpg" alt="Image 3" class="img-fluid">
+          </div>
+      </div>
+
+      <!-- Image 14 -->
+      <div class="col-md-4 mb-4 col-6 col-lg-3">
+          <div class="image-container" onclick="openImageModal('h2023p/n7.jpg')">
+              <img src="/h2023p/n7.jpg" alt="Image 3" class="img-fluid">
+          </div>
+      </div>
+
+      <!-- Image 15 -->
+      <div class="col-md-4 mb-4 col-6 col-lg-3">
+          <div class="image-container" onclick="openImageModal('h2023p/n8.jpg')">
+              <img src="/h2023p/n8.jpg" alt="Image 3" class="img-fluid">
+          </div>
+      </div>
+
+      <!-- Image 16 -->
+      <div class="col-md-4 mb-4 col-6 col-lg-3">
+          <div class="image-container" onclick="openImageModal('h2023p/n9.jpg')">
+              <img src="/h2023p/n9.jpg" alt="Image 3" class="img-fluid">
+          </div>
+      </div>
+
+      <!-- Image 17 -->
+      <div class="col-md-4 mb-4 col-6 col-lg-3">
+          <div class="image-container" onclick="openImageModal('h2023p/n10.jpg')">
+              <img src="/h2023p/n10.jpg" alt="Image 3" class="img-fluid">
+          </div>
+      </div>
+
+      <!-- Image 18 -->
+      <div class="col-md-4 mb-4 col-6 col-lg-3">
+          <div class="image-container" onclick="openImageModal('h2023p/n11.jpg')">
+              <img src="/h2023p/n11.jpg" alt="Image 3" class="img-fluid">
+          </div>
+      </div>
+
+      <!-- Image 19 -->
+      <div class="col-md-4 mb-4 col-6 col-lg-3">
+          <div class="image-container" onclick="openImageModal('h2023p/n12.jpg')">
+              <img src="/h2023p/n12.jpg" alt="Image 3" class="img-fluid">
+          </div>
+      </div>
+
+      <!-- Image 20 -->
+      <div class="col-md-4 mb-4 col-6 col-lg-3">
+          <div class="image-container" onclick="openImageModal('h2023p/n13.jpg')">
+              <img src="/h2023p/n13.jpg" alt="Image 3" class="img-fluid">
+          </div>
+      </div>
+
+      <!-- Image 21 -->
+      <div class="col-md-4 mb-4 col-6 col-lg-3">
+          <div class="image-container" onclick="openImageModal('h2023p/n14.jpg')">
+              <img src="/h2023p/n14.jpg" alt="Image 3" class="img-fluid">
+          </div>
+      </div>
+
+      <!-- Image 22 -->
+      <div class="col-md-4 mb-4 col-6 col-lg-3">
+          <div class="image-container" onclick="openImageModal('h2023p/n15.jpg')">
+              <img src="/h2023p/n15.jpg" alt="Image 3" class="img-fluid">
+          </div>
+      </div>
+
+      <!-- Image 23 -->
+      <div class="col-md-4 mb-4 col-6 col-lg-3">
+          <div class="image-container" onclick="openImageModal('h2023p/n16.jpg')">
+              <img src="/h2023p/n16.jpg" alt="Image 3" class="img-fluid">
+          </div>
+      </div>
+
+      <!-- Image 24 -->
+      <div class="col-md-4 mb-4 col-6 col-lg-3">
+          <div class="image-container" onclick="openImageModal('h2023p/n17.jpg')">
+              <img src="/h2023p/n17.jpg" alt="Image 3" class="img-fluid">
+          </div>
+      </div>
+
+      <!-- Image 25 -->
+      <div class="col-md-4 mb-4 col-6 col-lg-3">
+          <div class="image-container" onclick="openImageModal('h2023p/n18.jpg')">
+              <img src="/h2023p/n18.jpg" alt="Image 3" class="img-fluid">
+          </div>
+      </div>
+      
+      <!-- Image 26 -->
+      <div class="col-md-4 mb-4 col-6 col-lg-3">
+          <div class="image-container" onclick="openImageModal('h2023p/n19.jpg')">
+              <img src="/h2023p/n19.jpg" alt="Image 3" class="img-fluid">
+          </div>
+      </div>
+
+      <!-- Image 27 -->
+      <div class="col-md-4 mb-4 col-6 col-lg-3">
+          <div class="image-container" onclick="openImageModal('h2023p/n20.jpg')">
+              <img src="/h2023p/n20.jpg" alt="Image 3" class="img-fluid">
+          </div>
+      </div>
+
+      <!-- Image 28 -->
+      <div class="col-md-4 mb-4 col-6 col-lg-3">
+          <div class="image-container" onclick="openImageModal('h2023p/n21.jpg')">
+              <img src="/h2023p/n21.jpg" alt="Image 3" class="img-fluid">
+          </div>
+      </div>
+
+      <!-- Image 29 -->
+      <div class="col-md-4 mb-4 col-6 col-lg-3">
+          <div class="image-container" onclick="openImageModal('h2023p/n22.jpg')">
+              <img src="/h2023p/n22.jpg" alt="Image 3" class="img-fluid">
+          </div>
+      </div>
+
+      <!-- Image 30 -->
+      <div class="col-md-4 mb-4 col-6 col-lg-3">
+          <div class="image-container" onclick="openImageModal('h2023p/n23.jpg')">
+              <img src="/h2023p/n23.jpg" alt="Image 3" class="img-fluid">
+          </div>
+      </div>
+
+      <!-- Image 31 -->
+      <div class="col-md-4 mb-4 col-6 col-lg-3">
+          <div class="image-container" onclick="openImageModal('h2023p/n24.jpg')">
+              <img src="/h2023p/n24.jpg" alt="Image 3" class="img-fluid">
+          </div>
+      </div>
+
+      <!-- Image 32  -->
+      <div class="col-md-4 mb-4 col-6 col-lg-3">
+          <div class="image-container" onclick="openImageModal('h2023p/n25.jpg')">
+              <img src="/h2023p/n25.jpg" alt="Image 3" class="img-fluid">
+          </div>
+      </div>
+
+      <!-- Image 33 -->
+      <div class="col-md-4 mb-4 col-6 col-lg-3">
+          <div class="image-container" onclick="openImageModal('h2023p/n26.jpg')">
+              <img src="/h2023p/n26.jpg" alt="Image 3" class="img-fluid">
+          </div>
+      </div>
+
+      <!-- Image 34 -->
+      <div class="col-md-4 mb-4 col-6 col-lg-3">
+          <div class="image-container" onclick="openImageModal('h2023p/n27.jpg')">
+              <img src="/h2023p/n27.jpg" alt="Image 3" class="img-fluid">
+          </div>
+      </div>
+
+      <!-- Image 35 -->
+      <div class="col-md-4 mb-4 col-6 col-lg-3">
+          <div class="image-container" onclick="openImageModal('h2023p/n28.jpg')">
+              <img src="/h2023p/n28.jpg" alt="Image 3" class="img-fluid">
+          </div>
+      </div>
+
+      <!-- Image 36 -->
+      <div class="col-md-4 mb-4 col-6 col-lg-3">
+          <div class="image-container" onclick="openImageModal('h2023p/n29.jpg')">
+              <img src="/h2023p/n29.jpg" alt="Image 3" class="img-fluid">
+          </div>
+      </div>
+
+      <!-- Image 37 -->
+      <div class="col-md-4 mb-4 col-6 col-lg-3">
+          <div class="image-container" onclick="openImageModal('h2023p/n30.jpg')">
+              <img src="/h2023p/n30.jpg" alt="Image 3" class="img-fluid">
+          </div>
+      </div>
+
+      <!-- Image 38 -->
+      <div class="col-md-4 mb-4 col-6 col-lg-3">
+          <div class="image-container" onclick="openImageModal('h2023p/n31.jpg')">
+              <img src="/h2023p/n31.jpg" alt="Image 3" class="img-fluid">
+          </div>
+      </div>
+
+
+</div>
+</div>
+
+<!-- Image Modal -->
+<div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+          <div class="modal-body">
+              <img id="modalImage" src="" alt="Modal Image" class="img-fluid">
+              <button id="downloadBtn" class="btn btn-primary mt-3" onclick="downloadImage()">Download Image</button>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js"></script>
+<script>
+  $(document).ready(function(){
+    // Toggle search bar visibility
+    $("#toggle-btn").click(function(){
+      $("#search-bar").slideToggle();
+      // Toggle cross symbol
+      $(this).find("i").toggleClass("fa-times fa-bars");
+    });
+  });
+</script>
+
+
+<script>
+  function openImageModal(imageSrc) {
+      const modalImage = document.getElementById('modalImage');
+      const downloadBtn = document.getElementById('downloadBtn');
+
+      modalImage.src = imageSrc;
+      $('#imageModal').modal('show');
+      downloadBtn.style.display = 'block';
+  }
+
+  function downloadImage() {
+      const modalImage = document.getElementById('modalImage');
+      const link = document.createElement('a');
+      link.href = modalImage.src;
+      link.download = 'downloaded-image.jpg';
+      link.click();
+  }
+</script>
+<!-- Bootstrap JS and Popper.js (Required for Bootstrap components) -->
+<!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
+
+
+
+</body>
+</html>
