@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Navbar</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="styles.css">
+<style>
+    .overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  display: none;
+}
+
+.navbar-brand {
+  padding: 0 15px;
+}
+
+@media (max-width: 991.98px) {
+  .navbar-expand-lg .navbar-collapse {
+    display: none;
+  }
+  .navbar-expand-lg .navbar-toggler {
+    display: block;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .navbar-expand-lg .navbar-nav {
+    flex-direction: column;
+  }
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding: 0.5rem 1rem;
+  }
+}
+
+
+</style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">
+    <img src="logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+    Your Logo
+  </a>
+  <button class="navbar-toggler" type="button" id="navbar-toggler">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Services</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="overlay"></div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
+<script src="script.js"></script>
+<script>
+    $('#navbar-toggler').click(function() {
+  $('.overlay').fadeIn();
+  $('.navbar-collapse').addClass('show');
+});
+
+$('.overlay').click(function() {
+  $(this).fadeOut();
+  $('.navbar-collapse').removeClass('show');
+});
+
+$(window).resize(function() {
+  if ($(window).width() > 991.98) {
+    $('.overlay').fadeOut();
+    $('.navbar-collapse').removeClass('show');
+  }
+});
+
+</script>
+</body>
+</html>
